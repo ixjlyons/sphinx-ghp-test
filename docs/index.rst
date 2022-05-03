@@ -12,8 +12,6 @@ Welcome to sphinx-ghp-test's documentation!
 
    api
 
-.. bad-directive::
-
 
 
 Indices and tables
