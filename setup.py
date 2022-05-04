@@ -7,5 +7,5 @@ setup(
     packages=find_packages(),
     author="Kenneth R. Lyons",
     python_requires=">=3",
-    extras_require={"docs": ["sphinx"]},
+    extras_require={"docs": ["sphinx", "sphinx-gallery", "matplotlib"]},
 )

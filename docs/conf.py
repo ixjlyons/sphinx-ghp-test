@@ -22,15 +22,13 @@ project = "sphinx-ghp-test"
 copyright = "2022, Kenneth R. Lyons"
 author = "Kenneth R. Lyons"
 
-sys
-
 
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ["sphinx.ext.napoleon", "sphinx.ext.autodoc"]
+extensions = ["sphinx.ext.napoleon", "sphinx.ext.autodoc", "sphinx_gallery.gen_gallery"]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -40,6 +38,11 @@ templates_path = ["_templates"]
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
+sphinx_gallery_conf = {
+    "examples_dirs": os.path.join(os.path.dirname(__file__), "..", "examples"),
+    "gallery_dirs": "examples",
+    "filename_pattern": r"/example",
+}
 
 # -- Options for HTML output -------------------------------------------------
 
