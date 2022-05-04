@@ -42,6 +42,7 @@ sphinx_gallery_conf = {
     "examples_dirs": os.path.join(os.path.dirname(__file__), "..", "test-cases"),
     "gallery_dirs": "test-cases",
     "filename_pattern": r"/example",
+    "ignore_pattern": r"(helper)|(__init__)",
 }
 
 # -- Options for HTML output -------------------------------------------------
