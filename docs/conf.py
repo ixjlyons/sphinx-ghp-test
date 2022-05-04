@@ -39,8 +39,8 @@ templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 sphinx_gallery_conf = {
-    "examples_dirs": os.path.join(os.path.dirname(__file__), "..", "examples"),
-    "gallery_dirs": "examples",
+    "examples_dirs": os.path.join(os.path.dirname(__file__), "..", "test-cases"),
+    "gallery_dirs": "test-cases",
     "filename_pattern": r"/example",
 }
 
