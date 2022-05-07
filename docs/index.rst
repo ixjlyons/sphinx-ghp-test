@@ -12,6 +12,7 @@ Testing
    :maxdepth: 2
    :caption: Contents:
 
+   test-cases/index
    api
 
 
